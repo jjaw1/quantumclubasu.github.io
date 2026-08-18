@@ -28,6 +28,11 @@
   icon: "bi bi-instagram"
   url: "https://www.instagram.com/quantumclubasu/" # Fill with your Linkedin homepage
 
+- type: sundevil central
+  icon_light: "assets/img/LogoV3_Circle.png"
+  icon_dark: "assets/img/LogoV3_CircleDark.png"
+  url: "https://sundevilcentral.eoss.asu.edu/feeds?type=club&type_id=36012&tab=about"
+
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'

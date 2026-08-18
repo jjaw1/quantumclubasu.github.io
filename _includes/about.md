@@ -2,7 +2,10 @@
 ## Welcome to the Quantum Club @ ASU
 
 <div style="display:flex; align-items:center; gap:16px;">
-  <img src="assets/img/LogoV3_Circle.png" alt="Dark mode only" style="width:180px; max-width:200px; height:auto;">
+  {% assign logo_light = 'assets/img/LogoV3_Circle.png' | relative_url %}
+  {% assign logo_dark = 'assets/img/LogoV3_CircleDark.png' | relative_url %}
+  <img src="{{ logo_light }}" alt="Quantum Club Logo" class="light" style="width:180px; max-width:200px; height:auto;">
+  <img src="{{ logo_dark }}" alt="Quantum Club Logo" class="dark" style="width:180px; max-width:200px; height:auto;">
   <div>
     <h3> Who Are We? </h3>
     <p>
@@ -27,10 +30,16 @@ Join us for workshops, talks, projects, and discussions that bridge theory and a
 
 <center>
 <div class="social" style="font-size: 4.5rem; margin-top: -3rem">
-    <a href="https://discord.gg/GfJUfyRpty"><i class="bi bi-discord"></i></a>&nbsp;
-    <a href="mailto:quantumclub.asu@gmail.com"><i class="fa fa-envelope"></i></a>&nbsp;
-    <a href="https://www.linkedin.com/company/quantum-club-asu/"><i class="fab fa-linkedin"></i></a>&nbsp;
-    <a href="https://www.instagram.com/quantumclubasu/"><i class="bi bi-instagram"></i></a>&nbsp;
+    {% assign sdc = site.data.contact | where: "type", "sundevil central" | first %}
+    {% assign sdc_url = sdc.url | default: "https://sundevilcentral.eoss.asu.edu/feeds?type=club&type_id=36012&tab=about" %}
+    <a href="{{ sdc_url }}" target="_blank" rel="noopener noreferrer" aria-label="SunDevil Central" title="SunDevil Central">
+      <img src="{{ logo_light }}" alt="SunDevil Central" class="light" style="width: 0.9em; height: 0.9em; object-fit: contain;">
+      <img src="{{ logo_dark }}" alt="SunDevil Central" class="dark" style="width: 0.9em; height: 0.9em; object-fit: contain;">
+    </a>&nbsp;
+    <a href="https://discord.gg/GfJUfyRpty" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord"><i class="bi bi-discord"></i></a>&nbsp;
+    <a href="mailto:quantumclub.asu@gmail.com" aria-label="Email" title="Email"><i class="fa fa-envelope"></i></a>&nbsp;
+    <a href="https://www.linkedin.com/company/quantum-club-asu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp;
+    <a href="https://www.instagram.com/quantumclubasu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>&nbsp;
 </div>
 </center>
 

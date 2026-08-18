@@ -73,7 +73,14 @@
       target="_blank" {% assign link_types='noopener noreferrer' %} {% endunless %} {% if entry.type=='mastodon' %} {%
       assign link_types=link_types | append: ' me' | strip %} {% endif %} {% unless link_types==empty %}
       rel="{{ link_types }}" {% endunless %}>
+      {% if entry.icon and entry.icon != empty %}
       <i class="{{ entry.icon }}"></i>
+      {% elsif entry.icon_light or entry.type == 'sundevil central' %}
+      {% assign img_light = entry.icon_light | default: 'assets/img/LogoV3_Circle.png' | relative_url %}
+      {% assign img_dark = entry.icon_dark | default: 'assets/img/LogoV3_CircleDark.png' | relative_url %}
+      <img src="{{ img_light }}" alt="{{ entry.type }}" class="light" style="width: 1.2rem; height: 1.2rem; object-fit: contain;">
+      <img src="{{ img_dark }}" alt="{{ entry.type }}" class="dark" style="width: 1.2rem; height: 1.2rem; object-fit: contain;">
+      {% endif %}
     </a>
     {% endif %}
     {% endfor %}
