@@ -31,11 +31,12 @@ members:
 
   - name: Michelle Akins
     post: Secretary
-    image: https://media.licdn.com/dms/image/v2/D4D03AQF5ZvpYH9YkMw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711134515449?e=1761782400&v=beta&t=YxcbPvCb1dCIikO8xOZlEE7sdIajkmpHNXbgxJw-Esk
+    image: /assets/img/team/michelle.jpeg
     linkedin: 
     email: makins12@asu.edu
     # url: # Only use this for personal websites. Linkedin will automatically get the url based on the id
     about: |
+      Computer Information Systems undergraduate passionate about expanding access to technology, exploring emerging fields like quantum computing, and combining technical innovation with strong design
       
 
   
