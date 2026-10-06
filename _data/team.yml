@@ -38,7 +38,14 @@ members:
     about: |
       Computer Information Systems undergraduate passionate about expanding access to technology, exploring emerging fields like quantum computing, and combining technical innovation with strong design
       
-
+  - name: Jeremiah Jaw
+    post: Logistics and Operations
+    image: /assets/img/team/jerru.jpeg
+    linkedin: 
+    email: jjaw1@asu.edu
+    # url: # Only use this for personal websites. Linkedin will automatically get the url based on the id
+    about: |
+      Electrical Engineering undergraduate interested in hardware and computing, excited to get to know people, industries, and stories on a deep level
   
 
 previous_members:
